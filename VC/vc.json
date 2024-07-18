@@ -1,15 +1,13 @@
-
-     {
-        "id": "did:rcw:940608eb-b4cf-4879-b4e9-7b6da8e5836c",
+ {
+        "id": "did:rcw:04f90bf8-a9d5-473b-b8a7-f680d19cdf44",
         "type": [
             "VerifiableCredential",
-            "LifeInsuranceCredential",
             "InsuranceCredential"
         ],
         "proof": {
             "type": "Ed25519Signature2020",
-            "created": "2024-07-16T11:53:17Z",
-            "proofValue": "z52uTVhkbT9La6skbcSKiXJLtr6CPxfvoqdYZcPxeMaezm7hfPqg9RxUUyokbS3BEVr5Jri7V87YWRBTqwMejBwAS",
+            "created": "2024-07-18T11:30:36Z",
+            "proofValue": "z65FE1gc3LVefnj84TToN3A5XdK2k1XLLEJNuL2BUvYimDTkCShGVsnf6DgzPkwG2ZsHdEKQ2gbUqXhWwXv9X2rXJ",
             "proofPurpose": "assertionMethod",
             "verificationMethod": "did:web:jainhitesh9998.github.io:tempfiles:a92355ab-6957-4608-818b-07408b192ee0#key-0"
         },
@@ -17,18 +15,14 @@
         "@context": [
             "https://www.w3.org/2018/credentials/v1",
             "https://holashchand.github.io/test_project/insurance-context.json",
-            {
-                "LifeInsuranceCredential": {
-                    "@id": "InsuranceCredential"
-                }
-            },
             "https://w3id.org/security/suites/ed25519-2020/v1"
         ],
-        "issuanceDate": "2024-07-16T11:53:17.099Z",
-        "expirationDate": "2024-08-15T11:53:17.063Z",
+        "issuanceDate": "2024-07-18T11:30:35.939Z",
+        "expirationDate": "null",
         "credentialSubject": {
-            "id": "did:jwk:eyJrdHkiOiJSU0EiLCJlIjoiQVFBQiIsInVzZSI6InNpZyIsImtpZCI6InZvVVd1dUt2NlZSdnk3elhkczBoRF9ITHlXclNNNnY3TVNXN2gzQnRkMnMiLCJhbGciOiJSUzI1NiIsIm4iOiJrR1Y3ZmM0Q1NHZ2RwS3I4WmFQa3p4OGczblB1Y1djNEtkRkNRTU91OUswek1LSTZ6YURMaXp4TXkxVVJHM2RXM2ppOWV5RlFEQjVUMHd4MDNUX1NpQUUyVV9kTlBnN3pMeE55N2JicFBPSS1WaGdlcjd5QWpxRnU4T2RDTUF5WHFFY2NOX2pzZ1BzOXdRaElPX3pTcmNFU0NFbjVzUjZDWUZ5a2dpUm02aFhJdldHak1mSVZ1LU9UOVpYZkxvc0VLOWgtUmU3MUJSNEFMcUwzYlV0VWxMc3pVc1pEMW4zcEoySFVDUjVqM1VoVDNiSEVKdmFaYmRTQjI5VlhOblQ1OHpBM3E5WG9nSGpIZTNXekZUdkdJTDhyZUJEQTdmM29FWk12RkpDbjlVSEJlS1pBa1RJMzRMTUJyaXpyUENaeldQX3hDU1lEUGFqYzJ0OUMzRG1ZZHcifQ==",
-            "dob": "1969-12-24",
+            "id": "did:web:jainhitesh9998.github.io:tempfiles:a92355ab-6957-4608-818b-07408b192ee0",
+            "dob": "1968-10-24",
+            "type": "InsuranceCredential",
             "email": "abhishek@gmail.com",
             "gender": "Male",
             "mobile": "0123456789",
@@ -38,7 +32,7 @@
             ],
             "fullName": "Abhishek Gangwar",
             "policyName": "Start Insurance Gold Premium",
-            "policyNumber": "1234567",
+            "policyNumber": "12345678",
             "policyIssuedOn": "2023-04-20T20:48:17.684Z",
             "policyExpiresOn": "2033-04-20T20:48:17.684Z"
         }
