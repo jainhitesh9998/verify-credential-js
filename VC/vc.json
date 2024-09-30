@@ -1,31 +1,75 @@
 {
-    "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://holashchand.github.io/test_project/insurance-context.json",
-        "https://w3id.org/security/data-integrity/v2"
+  "id": "did:rcw:24dc9552-dcfe-4cb3-8882-6926640ab439",
+  "type": [
+    "VerifiableCredential",
+    "farmer"
+  ],
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2024-09-28T07:47:54Z",
+    "proofValue": "zeBNm4u4RJvQ3bNXLK1pr2NFxhNpCGKPnqD42JisP2z8kjPvirYFRFvjzVXASvNNDep8GuPGx92BsyozAZMe6WX9",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:web:ridhima-25.github.io:VCDID:b399f0a1-d953-4ee9-866d-4bf0817ed71e#key-0"
+  },
+  "issuer": "did:web:ridhima-25.github.io:VCDID:b399f0a1-d953-4ee9-866d-4bf0817ed71e",
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://ridhima-25.github.io/test_project/context.json",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "issuanceDate": "2024-09-28T07:47:54.322Z",
+  "expirationDate": "2025-02-06T11:56:27.259Z",
+  "credentialSubject": {
+    "id": "did:1234556",
+    "dob": "03/06/1996",
+    "gender": "Male",
+    "address": "WARD N0-16, Kaimganj, Farrukhabad, Uttar Pradesh, 209502",
+    "farmerId": "78267102210",
+    "disclaimer": "Farmer has consented to share their data regarding ALL land parcels and ALL crops sown on these land parcels for Rabi,2023-2024 available with Agri Stack Farmer Registry.",
+    "farmerName": "Test Name",
+    "cropDetails": [
+      {
+        "year": "2023-2024",
+        "farmId": "UP5991117090",
+        "season": "Rabi",
+        "cropName": "सरसों",
+        "sownArea": "0.0890 Hectares",
+        "sowingDate": "08/11/2023",
+        "irrigationType": "सिंचित"
+      },
+      {
+        "year": "2023-2024",
+        "farmId": "UP1134226693",
+        "season": "Rabi",
+        "cropName": "तम्बाकू",
+        "sownArea": "0.0570 Hectares",
+        "sowingDate": "14/11/2023",
+        "irrigationType": "सिंचित"
+      }
     ],
-    "type": [
-        "VerifiableCredential",
-        "InsuranceCredential"
+    "landDetails": [
+      {
+        "area": "0.0222 Hectares",
+        "farmId": "UP5991117090",
+        "village": "Raukri (145580)",
+        "district": "FARRUKHABAD",
+        "ownerType": "Single",
+        "subDistrict": "Kaimganj",
+        "landUseClass": "Non-agricultural Land",
+        "surveyNumber": "261/1455800261000012"
+      },
+      {
+        "area": "0.0285 hectors",
+        "farmId": "UP1134226693",
+        "village": "Raukri (145580)",
+        "district": "FARRUKHABAD",
+        "ownerType": "Single",
+        "subDistrict": "Kaimganj",
+        "landUseClass": "Agricultural Land",
+        "surveyNumber": "90/1455800090000012"
+      }
     ],
-    "issuer": "did:web:api.dev1.mosip.net:identity-service:3d9ba002-9414-43b4-97b7-a3bd4c18b1c8",
-    "expirationDate": "2033-04-20T20:48:17.684Z",
-    "issuanceDate": "2023-04-20T20:48:17.684Z",
-    "credentialSubject": {
-        "id": "did:web:api.dev1.mosip.net:identity-service:3d9ba002-9414-43b4-97b7-a3bd4c18b1c8",
-        "policyNumber": "991234562",
-        "policyExpiresOn": "2033-04-20T20:48:17.684Z",
-        "policyIssuedOn": "2023-04-20T20:48:17.684Z",
-        "fullName": "Harsh Vardhan v10",
-        "policyName": "Start Insurance Gold Premium",
-        "dob": "1999-10-25"
-    },
-    "proof": {
-        "type": "DataIntegrityProof",
-        "cryptosuite": "ecdsa-sd-2023",
-        "created": "2024-07-25T06:35:55.237Z",
-        "verificationMethod": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP#zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
-        "proofPurpose": "assertionMethod",
-        "proofValue": "u2V0AhdhAWEA9Ed7a4wRblfC3ucH4RoVZEHdM0IO_sNLgTjFYq3_tKtAsQgxmRmWolVca2uX345BEgiiFVzITTGqPQ8gh545K2EBYI4AkAwfvWWdSH6ONdODHOYnWJsHLt458VMB0eDA1aMwLyDYb2EBYIIwMQLgP51KtKRE1-tpaJF75AbvLr2dtbsn_owlX8vPWjNhAWECpaysKMMJR-7SRwznYnPko4VagJB5PozOx8S212HOV5SUlKG03cFoKliEkfN3dQ5YcMsLx6tqPfZfVe9gs3Coc2EBYQL_-erG0Z2EZMMGRf1eScKtfyDcDFbTxwO5a2xn2U4T1ogcmB6lOY-V2J-RrrA6e5L8g9iENp48EW0UxnROXNlDYQFhACIJB_F1D5ivr1NW7zULnmCMoMfqiKg_E48g_P_B-GX76SzombPSnuOpyEz1z31P64ukSXPgotqW6XrmG2aC1d9hAWEBBZbAcxs3dqrmZGYTCFy8lpXN7U3A7T5innU8dx5JDefk149I8mBqnAlQbVlCwqFmM0NydcEWpDLRAIKt99L7V2EBYQJE64IRgd9TCcRt9yLTzlYScOyZ33av3vNkSm2-lXBNqbtsWNJcE4VIW9wcXkAGprPTKoH-GY64sVZdaKaWWDGTYQFhAx5gUud8plXAdHe1GC4Lv_4c8Hk2adaGNfMKJtSK91nLuROsKjLW_L2-M9zGUwpzb6OdR4HiFPOTbcxT0MdYIe9hAWEAdMA35ZoVI_3FUQN_UxTyU1u4fEHPFLfy8yfRmpQTtLyRk9YbU1c1LBjU09AxwEp_nwILiL9nGmimi7OcZiBkV2EBYQPj2_Q2xqSafbWJrezW5Ee6ISt_0syQGOfM2q13pND6pDIN51O0wRoiETjGoKvmMbCpIVEMSgJAGdJPcj1EyRDfYQFhAAE4LtNEFCegIASCD_X6DSQIhqaf1iCiBZbdCuw_0_WjkXIfavBvY9UOssSZQHgv0EgDt_9yUKoqK-IK_Zc78FthAWEA1HHpnhzd5k-67S32HFVQLfTJitVI1kAKsP6mh8CNY-7DH7fAMwterl22aYCDgmGKI3QuWN7sAT2kz8B5nlEoj2EBYQIr1UqQpKojFGlVib4YWZjS8YOf5RSgHwzqCX3nEsQTkRuhkF1nEVhOldq3r95TN6BKzoVySRf_BJMaTZ1kxEmrYQFhADbMDNbv3E63kSurUNprkuAouz7HUEwIJFm5sI6bpqej0nGKnDaFLQK69JfIoUy-gZFkNhmoqFeTY5j0s0S-1UIA"
-    }
+    "issuanceDate": "2024-09-23T11:56:27.259Z",
+    "identifierName": "C/o सुनील कुमार सिंह"
+  }
 }
