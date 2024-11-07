@@ -1,14 +1,16 @@
-{
+ {
         "@context": [
-            "https://www.w3.org/2018/credentials/v1"
+            "https://www.w3.org/2018/credentials/v1",
+            "https://vharsh.github.io/DID/mock-context.json"
         ],
-        "issuer": "https://vharsh.github.io/DID/mock-rsac.json",
+        "issuer": "did:web:vharsh.github.io:DID:harsh",
         "type": [
             "VerifiableCredential",
             "MockVerifiableCredential"
         ],
-        "issuanceDate": "2024-10-14T12:45:19.930Z",
-        "expirationDate": "2026-10-14T12:45:19.930Z",
+        "issuanceDate": "2024-11-07T04:30:36.106Z",
+        "expirationDate": "2026-11-07T04:30:36.107Z",
+        "id": "https://api.dev1.mosip.net/v1/mock-identity-system/1234",
         "credentialSubject": {
             "gender": [
                 {
@@ -84,16 +86,14 @@
                 }
             ],
             "vcVer": "VC-V1",
-            "UIN": 1234567,
-            "email": "siddhartha.km@gmail.com",
-            "id": "https://api.dev1.mosip.net/v1/mock-identity-system/identity/1234567",
-            "face": "sqauare logo"
+            "UIN": 1234,
+            "email": "siddhartha.km@gmail.com"
         },
         "proof": {
-            "type": "RsaSignature2018",
-            "created": "2024-10-14T07:15:19Z",
+            "type": "Ed25519Signature2018",
+            "created": "2024-11-06T23:00:36Z",
             "proofPurpose": "assertionMethod",
-            "verificationMethod": "https://vharsh.github.io/DID/mock-rsa.json",
-            "jws": "eyJ4NXQjUzI1NiI6ImNJSGR5cmlDWVQyQkR2ZWVWMUtHZDk3cThRYW1YX3ZRaGJrY0otNHR6ODgiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiI5U1JJY1R3eXdsS2lmWUY5djdKMWJlY0VQLUVLd21wYzZqdXMzUlZaMnFrIiwiYWxnIjoiUlMyNTYifQ..QNEyqSpj0rugKOKTW3pQukdlilT97akR0wxGMawOIXk7kefoQwQaNHCIeGM-jeYemfVfkv8wvazF8wwimtsUBGI2hLomu0fmW-Y6P5xZ6YMRV4fADOjZ5NJyBYKeYQxigX8MsQ0u0YBYHEy6HpgCXEnuo9YglLTBYzYFyUhATjMZaut9bmvknEg42N2nHFqOv-9Z-Wu4a4NIXTR2YfBQc4iMHFDMC03hmpM1rFxhV-KBrW2l6lrOpl8q2Ir1IMACaRX81RRE_K6E0rv3enmCe9CARCFVyoQ6y78yxM6tu574-Tng-YCp5hE-G_yq0M7F72R4KL9o3yP6-9H3CiYw7Q"
+            "verificationMethod": "did:web:vharsh.github.io:DID:harsh#key-0",
+            "jws": "eyJ4NXQjUzI1NiI6IjRxNThyNUNRUk54azZza3JnMll2NWozRDhmLTRxWnpnNmFsVFd0Y2dxbzAiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdLCJraWQiOiIxR0ZHVXFtcjlpbF9GeFBNMDVTVTRyWnVfcEVxQUx4anp2UWtENTByVHZVIiwiYWxnIjoiRWREU0EifQ..9oSnR8nNi-5EI8H_0hBXWGGTWKTQxyXccsBLSvstTIuoIV6J5gAqNR5T4Lf_nX3RuNphLXkzjyz8sjN4kre4DA"
         }
-}
+    }
